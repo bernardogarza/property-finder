@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 class DashboardController < ApplicationController
-  def index
-  end
+  before_action :set_sidebar
 
-  def properties
-  end
+  def index; end
 
-  def reports
+  private
+
+  def set_sidebar
+    @show_sidebar = true
   end
 end

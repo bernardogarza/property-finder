@@ -12,8 +12,8 @@
 
 </head>
 
-<body id="<%= controller.controller_name %>" class="<%= controller.action_name %>">
-  <% if ["public", "devise", "sessions"].include?(controller.controller_name) %>
+<body id="<%= controller.controller_name %>" class="<%= controller.action_name %> <%= "show-sidebar" if @show_sidebar.present? %>">
+  <% if @show_sidebar.nil? %>
   <header>
     <%= render "layouts/nav/public" %>
     <%= yield %>
