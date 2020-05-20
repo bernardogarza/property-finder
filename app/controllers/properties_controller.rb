@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class PropertiesController < ApplicationController
-  before_action :set_property, only: [:show, :edit, :update, :destroy]
+  before_action :set_property, only: %i[show edit update destroy]
+  before_action :authenticate_account!, only: %i[new create destroy]
 
   # GET /properties
   # GET /properties.json
@@ -9,8 +12,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1
   # GET /properties/1.json
-  def show
-  end
+  def show; end
 
   # GET /properties/new
   def new
@@ -18,13 +20,13 @@ class PropertiesController < ApplicationController
   end
 
   # GET /properties/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /properties
   # POST /properties.json
   def create
     @property = Property.new(property_params)
+    @property.account_id = current_account.id
 
     respond_to do |format|
       if @property.save
@@ -62,13 +64,14 @@ class PropertiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_property
-      @property = Property.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def property_params
-      params.require(:property).permit(:name, :address, :price, :room, :bathroom)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_property
+    @property = Property.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def property_params
+    params.require(:property).permit(:name, :address, :price, :room, :bathroom)
+  end
 end

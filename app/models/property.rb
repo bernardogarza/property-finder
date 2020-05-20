@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Property < ApplicationRecord
-  belong_to :account 
+  belongs_to :account
 end
