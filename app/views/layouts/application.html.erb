@@ -16,8 +16,8 @@
   <% if @show_sidebar.nil? %>
   <header>
     <%= render "layouts/nav/public" %>
-    <%= yield %>
   </header>
+  <%= yield %>
   <% else %>
   <%= render "layouts/nav/dashboard" %>
   <div class="container-fluid" bis_skin_checked="1">

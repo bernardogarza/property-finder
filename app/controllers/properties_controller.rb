@@ -13,7 +13,9 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1
   # GET /properties/1.json
-  def show; end
+  def show
+    @agent = @property.account
+  end
 
   # GET /properties/new
   def new
