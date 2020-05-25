@@ -11,4 +11,8 @@
 #prop-details {
   height: 70px;
   overflow: hidden;
+
+  &.open {
+    height: auto;
+  }
 }

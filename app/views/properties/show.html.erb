@@ -30,7 +30,7 @@
       </div>
       <div class="row border-top border-bottom mt-5 mb-4 pt-4 pb-4">
         <div class="col-6">
-          <b class="text-success">Est. Monthly Reapayments of <%= number_to_currency((@property.price) / 360, precision: 0) %></b>
+          <b class="text-success">Est. Monthly Reapayments of <%= number_to_currency(((@property.price) / 360) * 0.90, precision: 0) %>*</b>
         </div>
         <div class="col-6 text-right">
           <b><%= link_to "Can I afford this property?", "#", class: "text-success"%></b>
@@ -45,8 +45,8 @@
           <div id="prop-details">
             <%= simple_format @property.details %>
           </div>
-          <button class="btn btn-outline-info mt-3">Show more</button>
-          <p class="mt-5">I will write some great placeholder text – and nobody writes better placeholder text than me, believe me – and I’ll write it very inexpensively. I will write some great, great text on your website’s Southern border, and I will make Google pay for that text. Mark my words. My text is long and beautiful, as, it has been well documented, are various other parts of my website. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.</p>
+          <button class="btn btn-outline-info mt-3" id="toggleDetails">Show more</button>
+          <p class="mt-5">*This rate is based on a 30 year mortgage., after paying an initial 10% downpayment. Shorter term mortgages would require a higher monthly repayment.</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,11 @@
 
 require('@rails/ujs').start();
 
-require('jquery');
+var jQuery = require('jquery')
+global.s = global.jQuery = jQuery;
+window.s = window.jQuery = jQuery;
+
+require('bootstrap');
 require('./includes/properties');
 
 
