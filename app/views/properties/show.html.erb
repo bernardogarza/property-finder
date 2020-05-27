@@ -23,6 +23,7 @@
             </div>
             <div class="col-4">
               <p class="m-0"><b>Parking</b></p>
+              <i class="fas fa-car"></i>
               <span class="lead"><%= @property.parking_spaces %></span>
             </div>
           </div>
@@ -52,6 +53,13 @@
     </div>
     <div class="col-md-4">
       <%= render "properties/agent_details" %>
-      <%#= render "properties/agent_details" %>
     </div>
   </div>
+
+  <section class="mt-5 mb-5">
+    <div class="container" bis_skin_checked="1">
+      <div class="row" bis_skin_checked="1">
+        <%= render "properties/list", properties: @agent_properties %>
+      </div>
+    </div>
+  </section>

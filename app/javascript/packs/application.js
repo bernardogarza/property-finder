@@ -10,6 +10,8 @@ global.s = global.jQuery = jQuery;
 window.s = window.jQuery = jQuery;
 
 require('bootstrap');
+require('@fortawesome/fontawesome-free/js/all');
+
 require('./includes/properties');
 
 
