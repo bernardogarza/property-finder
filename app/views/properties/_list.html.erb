@@ -2,7 +2,8 @@
 <div class="col-4">
   <div class="property border">
 
-    <div class="property-thumb" style="background-image: url(<%= property_thumbnail_url(property) %>)">
+    <div class="property-thumb" style="background-image: url('<%= property_thumbnail_url(property) %>')">
+      <!-- FIX THIS PROPERTY THUMBNAIL URL -->
       <%= link_to "", property_path(property) %>
     </div>
 
