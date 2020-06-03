@@ -7,7 +7,7 @@ module PropertiesHelper
   end
 
   def property_thumbnail_url(property)
-    property.photo.present? ? property.photo.thumb.url : 'placeholder.jpg'
+    property.photo.present? ? property.photo.thumb.url : asset_url('placeholder.jpg')
   end
 
   def property_photo_url(property)

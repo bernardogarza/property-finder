@@ -22,13 +22,18 @@
 </div>
 
 <div class="form-group">
-  <%= form.label :parking_spaces %>
-  <%= form.text_field :parking_spaces, class: "form-control" %>
+  <%= form.label :price, "Total Price (for sale) / Monthly Price (rental)" %>
+  <%= form.number_field :price, class: "form-control" %>
 </div>
 
 <div class="form-group">
-  <%= form.label :price, "Total Price (for sale) / Monthly Price (rental)" %>
-  <%= form.number_field :price, class: "form-control" %>
+  <%= form.label :available_date %>
+  <%= form.date_field :available_date, class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= form.label :parking_spaces %>
+  <%= form.number_field :parking_spaces, class: "form-control" %>
 </div>
 
 <div class="form-group">

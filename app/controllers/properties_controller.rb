@@ -76,6 +76,22 @@ class PropertiesController < ApplicationController
     end
   end
 
+  def email_agent
+    # trigger email send
+    agent_id = params[:agent_id]
+    first_name = params[:first_name]
+    last_name = params[:last_name]
+    email = params[:email]
+    message = params[:message]
+
+    ContactMailer.email_agent(agent_id, first_name, last_name, email, message).deliver_now
+
+    # response to script
+    respond_to do |format|
+      format.json { head :no_content }
+    end
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
@@ -91,6 +107,6 @@ class PropertiesController < ApplicationController
   def property_params
     params.require(:property).permit(:name, :details, :address, :parking_spaces,
                                      :price, :room, :bathroom, :photo,
-                                     :photo_cache, :for_sale)
+                                     :photo_cache, :for_sale, :available_date)
   end
 end
