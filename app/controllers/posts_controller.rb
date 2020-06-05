@@ -3,12 +3,16 @@
 class PostsController < ApplicationController
   before_action :authenticate_account!, only: %i[new create]
   before_action :set_post, only: %i[show edit update destroy]
-  before_action :can_access?, except: %i[show]
+  before_action :can_access?, except: %i[show latest]
 
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
+  end
+
+  def latest
+    @posts = Post.active
   end
 
   # GET /posts/1
