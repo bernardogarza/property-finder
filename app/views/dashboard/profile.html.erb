@@ -1,4 +1,4 @@
-<div class="property-main-photo" style="background-image:url('<%= cover_image_url @account %>')">
+<div class="property-main-photo mt-5" style="background-image:url('<%= cover_image_url @account %>')">
   <div class="photo-overlay">
   </div>
 </div>
@@ -19,7 +19,7 @@
 
       <div class="row border-top mt-5 pt-4">
         <div class="col">
-          <p class="h5">Description</p>
+          <p class="h5">About <%= @account.first_name %></p>
           <div id="prop-details">
             <%= simple_format @account.details %>
           </div>
