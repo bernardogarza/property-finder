@@ -13,4 +13,5 @@ class AdminController < ApplicationController
       redirect_to root_url, flash: { danger: 'You do not have access to view this page' } && return
     end
   end
+  
 end

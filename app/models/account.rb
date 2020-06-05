@@ -8,6 +8,7 @@ class Account < ApplicationRecord
          :trackable
 
   mount_uploader :image, ProfilePictureUploader
+  mount_uploader :cover_image, ProfilePictureUploader
 
   has_many :properties
 
