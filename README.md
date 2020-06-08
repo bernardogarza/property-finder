@@ -1,4 +1,4 @@
-# e-shop
+# Property Finder
 This app was built using RoR and JS, it's a simple real estate app designed for agents and costumers. As an agent, you can add properties for sale and rent, upload a property picture, profile picture, and cover picture for your profile, you can also write articles. As a customer, you have access to the agents' profiles where you can see their contact information (phone number and email), see the agent's statistics and his/her properties listing, and read articles published by the agents.
 
 
