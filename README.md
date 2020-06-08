@@ -43,7 +43,7 @@ $ localhost:3000/
 ```
 
 ## Future features
-- Improve styling of some sections of the app
+- Improve styling for some sections of the app
 - Add more features
 
 ## Built with
