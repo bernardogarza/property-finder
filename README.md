@@ -12,7 +12,7 @@ I used `devise` to manage users and disabled e-mail authentication considering t
 
 > PENDING
 
-## Screenshot
+## Screenshots
 
 > ![Property Finder](homepage-screenshot.png?raw=true "Property Finder")
 
