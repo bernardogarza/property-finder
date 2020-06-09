@@ -14,7 +14,12 @@ I used `devise` to manage users and disabled e-mail authentication considering t
 
 ## Screenshot
 
-> ![Property Finder](home-screenshot.png?raw=true "Property Finder")
+> ![Property Finder](homepage-screenshot.png?raw=true "Property Finder")
+
+
+> ![Property Finder](property-screenshot.png?raw=true "Property Finder")
+
+> ![Property Finder](profile-screenshot.png?raw=true "Property Finder")
 
 #
 
