@@ -23,7 +23,6 @@ I used `devise` to manage users and disabled e-mail authentication considering t
 
 #
 
-# README
 
 ## Getting started
 To get started with the app clone the repo and run the following commands:
