@@ -1,5 +1,5 @@
 # Property Finder
-This app was built using RoR and JS. It's a simple real estate app designed for agents and costumers. As an agent, you can add properties for sale and rent, upload a property picture, profile picture, and cover picture for your profile, you can also post articles. As a customer, you have access to the agents' profiles where you can see their contact information (phone number and e-mail), see the agent's statistics and his/her properties listing, and read articles published by the agents.
+This app was built using RoR and JS. It's a simple real estate app designed for agents and costumers. As an agent, you can add properties for sale and rent, upload a property picture, profile picture, and cover picture for your profile, you can also post articles. As a customer, you have access to the agents' profiles where you can see their contact information (phone number and e-mail), see the agent's statistics and their properties listing, and read articles published by the agents.
 
 I used `devise` to manage users and disabled e-mail authentication considering this app is only for educational purposes.
 
